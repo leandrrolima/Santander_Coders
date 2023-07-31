@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Post</title>
+    
+</head>
+<body>
+    <!-- post > Criando
+    get > Buscando
+    PUT > MOdificar
+    Delete > Deletar
+    PAtch > MOdificar apenas uma propriedade -->
+    <main> 
+    <form action="" method="" id ="formu">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+
+        <button type="submit" class="button-legal">Enviar</button>
+    </form>
+</main>
+
+<script>
+    document.getElementById('formu').addEventListener("submit", function(event){
+        event.preventDefault()
+        var email = document.getElementById('email').value
+        var senha = document.getElementById('senha').value
+
+        var dados = {
+            email: email,
+            senha: senha,
+        }
+        JSON.stringify(dados)
+        localStorage.setItem("Dados", data)
+
+        console.log(email)
+        console.log(senha)
+    })
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f-cadastro.css">
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+    <H1>Formulário de Inscrição</H1>
+    <div class="formulario-main">
+        <div class="formulario-form">
+            <form>
+                <div class="formulario-input-flex">
+                    <div>
+                        <label for="nome" class="formulario-form-label"> Nome </label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome..."
+                            class="formulario-form-input" />
+                    </div>
+                    <div>
+                        <label for="Idade" class="formulario-form-label"> Idade </label>
+                        <input type="number" name="idade" id="idade" placeholder="Sua idade..."
+                            class="formulario-form-input" min="0"/>
+                    </div>
+                </div>
+
+                <div class="formulario-input-flex">
+                    <div>
+                        <label for="email" class="formulario-form-label"> Email </label>
+                        <input type="email" name="email" id="email" placeholder="Seu email..."
+                            class="formulario-form-input" />
+                    </div>
+                    <div>
+                        <label for="phone" class="formulario-form-label"> Telefone</label>
+                        <input type="text" name="phone" id="phone" placeholder="Seu telefone..."
+                            class="formulario-form-input" />
+                    </div>
+                </div>
+
+                <label class="formulario-radio-label">
+                    <input class="formulario-input-radio" type="checkbox">
+                    Concordo com os termos e condições.
+                    <span class="formulario-radio-checkmark"></span>
+                </label>
+
+                <button class="formulario-btn">
+                    Enviar
+                </button>
+            </form>
+        </div>
+</body>
+
+</html>

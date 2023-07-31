@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .margin-bottom {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="margin-bottom">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="" id="name" placeholder="nome">
+                </div>
+
+                <div class="margin-bottom">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="margin-bottom">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+
+                <div class="margin-bottom">
+                    <label for="">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <option disabled selected>Selecione sua cidade</option>
+                        <optgroup>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="BA">Bahia</option>
+                            <option value="MA">Maranhão</option>
+                        </optgroup>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="AC">Acre</option>
+                    </select>
+                </div>
+
+                <div class="margin-bottom">
+                    <label for="comentario">Comentário:</label>
+                    <textarea name="Comentário" id="Comentário" cols="30" rows="10" ></textarea>
+                </div>
+                <div class="margin-bottom">
+                    <input type="checkbox" name="aceite" id="aceite">
+                    <label for="aceite">Aceito os termos e condições</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="margin-top: 10px;">
+                <div class="margin-bottom">
+                    <label for="Cor">Cor favorita</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+
+                <div class="margin-bottom">
+                    <label for="">Nascimento</label>
+                    <input type="date" name="" id="">
+                </div>
+
+                <div class="margin-bottom">
+                    <label for="numero">Número da sorte:</label>
+                    <input type="number" name="numero" id="numero">
+                </div>
+
+                <div class="margin-bottom">
+                    <label for="tipo-comida">Refeição favorita:
+                        <input type="radio" name="tipo-comida" id="">Café da manhã
+                        <input type="radio" name="tipo-comida" id="">Almoço
+                        <input type="radio" name="tipo-comida" id="">Jantar
+                    </label>
+                </div>
+                <button class="margin-bottom">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

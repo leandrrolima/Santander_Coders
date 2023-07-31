@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+}
+
+th,td {
+    border: 1px solid #7ec0f2be;
+}
+
+td {
+    text-align: center;
+}
+
+
+.titulo {
+    padding: 10px;
+    font-weight: bold;
+    text-align: start;
+}
+
+td.price {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+td.price-basic {
+    background: #7ebff2;
+}
+
+td.price-default {
+    background: #4a87ec;
+}
+
+td.price-advanced {
+    background: #7073ec;
+}
+
+.item-list {
+    padding-inline: 40px;
+    font-size: 20px;
+}
+
+td.footer {
+    padding: 16px;
+}
+
+tfoot button {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+   font-size: 20px;
+}
+
+
+button.basic {
+    background: #7ebff2;
+}
+
+button.default {
+    background: #4a87ec
+}
+
+button.advanced {
+    background: #7073ec;
+}

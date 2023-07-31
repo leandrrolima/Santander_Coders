@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .item {
+            background-color: rgb(12, 161, 180);
+            text-align: center;
+            margin: 5px;
+        }
+
+        .display-grid {
+            display: grid;
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid rgba(0, 0, 0, 0.233);
+            margin-bottom: 20px;
+        }
+
+        .template-column {
+            /* grid-template-columns: 100px 300px; */
+            grid-template-columns: 1fr 2fr 3fr 4fr;
+        }
+
+        .template-row {
+            /* grid-template-columns: 100px 300px; */
+            grid-template-rows: 1fr 2fr 3fr 4fr;
+        }
+
+        
+
+        .logo {
+            grid-area: logo;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .advert {
+            grid-area: advert;
+        }
+
+        .footer {
+            grid-area: footer;
+            
+        }
+        .template-area {
+            /* row-gap: 20px;
+            column-gap: 20px; */
+            gap: 10px 20px;
+             grid-template:
+            "logo    nav     nav" 50px
+            "sidebar content advert" 150px
+            "sidebar footer footer" 50px / 50px 2fr 50px; 
+    
+        }
+        .grid{
+            grid: 100px 100px / 1fr 1fr 1fr;
+        }
+        .grid-column{
+            grid-column: 1/4;
+        }
+        .grid-row{
+            grid-row: 1/4;
+        }
+        .grid-area{
+            grid-area: 3/2/3/1;
+        }
+        .repeat{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Display-Grid</h1>
+        <section class="display-grid">
+
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+
+        <h1>Grid-template-column</h1>
+        <section class="display-grid template-column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+
+        <h1>Grid-template-rows</h1>
+        <section class="display-grid template-row">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+
+        <h1>Grid-template-areas</h1>
+        <section class="display-grid template-area">
+            <div class="item log">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item sidebar">sidebar</div>
+            <div class="item content">content</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+
+        <h1>Grid</h1>
+        <section class="display-grid grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+
+        <h1>Grid-column</h1>
+        <section class="display-grid grid">
+            <div class="item grid-column">1</div>
+            <div class="item ">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+
+        <h1>Grid-Row</h1>
+        <section class="display-grid grid">
+            <div class="item grid-row">1</div>
+            <div class="item ">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            
+        </section>
+
+        <h1>Grid-area</h1>
+        <section class="display-grid grid">
+            <div class="item ">1</div>
+            <div class="item grid-area">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </section>
+
+    </main>
+</body>
+
+</html>

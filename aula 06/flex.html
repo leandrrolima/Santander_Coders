@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .flex{
+        display: flex;
+    }
+    .conteiner{
+        border:1px solid black;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .nowrap{
+        flex-wrap: nowrap;
+    }
+    .item{
+        flex: 1;
+        background-color: fuchsia;
+        text-align: center;
+        margin: 5px;
+        
+    }
+    .justify-content{
+        justify-content: space-around;
+    }
+    .align-itens{
+        align-items: flex-end;
+    }
+    .align-content{
+        align-content: center;
+    }
+</style>
+<body>
+    <main>
+        <h1>Display Block</h1>
+        <section class="conteiner">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </section>
+
+        <h1 class=>Display Flex</h1>
+        <section class="conteiner flex">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </section>
+
+        <h1 class=>Flex-direction row</h1>
+        <section class="conteiner flex row">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </section>
+
+        <h1 class=> Flex-direction: column</h1>
+        <section class="conteiner flex column">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </section>
+
+        <h1 class=> Flex-direction: row-reverse</h1>
+        <section class="conteiner flex column row-reverse">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </section>
+
+        <h1 class=> Flex-direction: wrap</h1>
+        <section class="conteiner flex wrap">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div> 
+            <div class="item">05</div>
+            <div class="item">06sldkçsldkçlskdçlksçldksçldkçlsdkçlskdçlksçldkçsldkçlskdçlksçldksçldçlsdklçskdlçskdçlks</div>
+        </section>
+
+        <h1 class=> Flex-direction: Nowrap</h1>
+        <section class="conteiner flex nowrap">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+           
+        </section>
+
+        <h1 class=> Justify-Content</h1>
+        <section class="conteiner flex justify-content">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </section>
+
+        <h1> Align-itens</h1>
+        <section class="conteiner flex row align-itens">
+            <div class="item">01</div>
+            <div class="item">02 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae laborum dolore sunt eveniet facilis animi in perspiciatis porro. Neque minima consequuntur tempora ducimus! Nemo laudantium eum officiis ex officia!</div>
+            <div class="item">03</div>
+        </section>
+
+        <h1> Align-Content</h1>
+        <section class="conteiner flex row align-content wrap">
+            <div class="item">01</div>
+            <div class="item">02 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem quae inventore voluptatum autem, nulla quia porro. Atque vitae culpa sit suscipit aut totam est placeat dolorum perferendis. Modi, totam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ducimus cumque aperiam sit illum rerum atque officia commodi et facere saepe voluptatum nostrum nemo, pariatur accusamus qui, nobis, repudiandae dolorem.</div>
+            <div class="item">03</div>
+            <div class="item">03</div>
+        </section>
+
+        
+    </main>
+</body>
+</html>

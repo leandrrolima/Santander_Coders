@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- <table></table>
+        <tr></tr>
+        <td></td>
+        <th></th>
+        <thead></thead>
+        <tbody></tbody>
+       <tfoot></tfoot>
+       <caption></caption>
+       <colgroup></colgroup>
+       <col> -->
+
+       <table>
+        <colgroup>
+        <col  span="2" ></colgroup>
+        <col  span="1" class="red"></colgroup>
+        
+        <tr>
+            <th>Nome</th>
+            <td >Leandro</td>
+            <td>Vinicius</td>
+            <td>Januário</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone</th>
+            <td>61 00000-0000</td>
+            <td rowspan="2">61 00000-0000</td>
+            <td rowspan="2">61 00000-0000</td>
+        </tr>
+        <tr>
+            <td >61 00000-0000</td>
+        </tr>
+       </table>
+
+
+
+
+
+
+
+
+
+            <table>
+                <caption>Tabela de itens</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macbook</td>
+                        <!-- <td>Apple</td> -->
+                        <td>R$10.000</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <!-- <td>Dell</td> -->
+                        <td>R$500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cabo</td>
+                        <!-- <td>Dell</td> -->
+                        <td>R$10.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td >Total</td>
+                        <td>R$10.510.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        
+    </main>
+</body>
+</html>
