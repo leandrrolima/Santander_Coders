@@ -12,11 +12,11 @@ const enviarEmail = (addressee, subject, body) => {
             Assunto: ${subject}
             
             ${body}
-            
             CarStore - Aqui você encontra o seu carro novo
         `);
 
     return "E-mail enviado com sucesso!";
+
 };
 
 
@@ -36,7 +36,7 @@ const diaDaSemana = () => {
 
 const bodyEmail = (cliente) => {
 
-    const corpo = `
+    const body = `
       Olá, ${cliente.email}!
       
       Confira as nossas novidades:
@@ -48,9 +48,10 @@ const bodyEmail = (cliente) => {
       
       Atenciosamente,
       A Equipe CarStore
+      
     `;
 
-    return corpo;
+    return body;
 };
 
 const sendEmail = () => {
@@ -64,6 +65,7 @@ const sendEmail = () => {
             const corpoEmail = bodyEmail(cliente);
             const resultado = enviarEmail(cliente.email, "Novidades da CarStore", corpoEmail);
             console.log(resultado);
+            console.log("=======================================================================")
         }
     });
 };
