@@ -21,30 +21,30 @@ const enviarEmail = (addressee, subject, body) => {
 
 
 const clientes = [
-    { email: "cliente1@exemplo.com", aceite: true },
-    { email: "cliente2@exemplo.com", aceite: false },
-    { email: "cliente3@exemplo.com", aceite: true },
-    { email: "cliente4@exemplo.com", aceite: false },
+    { email: "José@exemplo.com", aceite: true },
+    { email: "Vanessa@exemplo.com", aceite: false },
+    { email: "Juquinha@exemplo.com", aceite: true },
+    { email: "Claudia@exemplo.com", aceite: false },
 
 ];
 
-const verificaDiaDaSemana = () => {
+const diaDaSemana = () => {
     const now = new Date();
     const diaDaSemana = now.getDay();
     return diaDaSemana === 1;
 };
 
-const montaCorpoDoEmail = (cliente) => {
+const bodyEmail = (cliente) => {
 
     const corpo = `
       Olá, ${cliente.email}!
       
-      Confira as novidades da CarStore para esta semana:
+      Confira as nossas novidades:
+
       - Novos veículos em destaque
       - Os modelos mais vendidos
-      - Condições especiais para aquisição
+      - Taxa de juros acessiveis
       
-      Visite nossa loja e descubra mais opções incríveis!
       
       Atenciosamente,
       A Equipe CarStore
@@ -53,15 +53,15 @@ const montaCorpoDoEmail = (cliente) => {
     return corpo;
 };
 
-const enviarEmailsParaClientes = () => {
-    if (!verificaDiaDaSemana()) {
+const sendEmail = () => {
+    if (!diaDaSemana()) {
         console.log("Hoje não é segunda-feira. Nenhum e-mail será enviado.");
         return;
     }
 
     clientes.forEach(cliente => {
         if (cliente.aceite) {
-            const corpoEmail = montaCorpoDoEmail(cliente);
+            const corpoEmail = bodyEmail(cliente);
             const resultado = enviarEmail(cliente.email, "Novidades da CarStore", corpoEmail);
             console.log(resultado);
         }
@@ -69,4 +69,4 @@ const enviarEmailsParaClientes = () => {
 };
 
 
-enviarEmailsParaClientes();
+sendEmail();
