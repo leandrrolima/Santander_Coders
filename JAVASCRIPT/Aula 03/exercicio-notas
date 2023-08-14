@@ -1,0 +1,49 @@
+const listaDeAlunos = [
+  { nome: 'João', nota1: 8, nota2: 7 },
+  { nome: 'Maria', nota1: 9, nota2: 8 },
+  { nome: 'Carlos', nota1: 6, nota2: 5 },
+  { nome: 'Ana', nota1: 7, nota2: 6 },
+  { nome: 'Pedro', nota1: 10, nota2: 9 },
+  { nome: 'Lúcia', nota1: 8, nota2: 7 },
+  { nome: 'Fernando', nota1: 7, nota2: 6 },
+  { nome: 'Camila', nota1: 9, nota2: 8 },
+  { nome: 'Rafael', nota1: 6, nota2: 5 },
+  { nome: 'Juliana', nota1: 10, nota2: 9 }
+];
+
+const medias = listaDeAlunos.map(aluno => {const media = (aluno.nota1 + aluno.nota2) / 2;
+    return {nome: aluno.nome, media};
+});
+
+console.log(medias);
+
+// listaDeAlunos.forEach(aluno => {
+//     const media = (aluno.nota1 + aluno.nota2) / 2;
+//     console.log(`${aluno.nome}: ${media}`);
+// });
+
+// for (let i = 0; i < listaDeAlunos.length; i++) {
+//     const aluno = listaDeAlunos[i];
+//     const media = (aluno.nota1 + aluno.nota2) / 2;
+//     console.log(`Aluno(a): ${aluno.nome} - Média: ${media}`);
+// }
+
+// const alunos = [
+//     { nome: 'João', notas: [8, 7] },
+//     { nome: 'Maria', notas: [9, 8] },
+//     { nome: 'Carlos', notas: [6, 5] },
+//     { nome: 'Ana', notas: [7, 6] },
+//     { nome: 'Pedro', notas: [10, 9] },
+//     { nome: 'Lúcia', notas: [8, 7] },
+//     { nome: 'Fernando', notas: [7, 6] },
+//     { nome: 'Camila', notas: [9, 8] },
+//     { nome: 'Rafael', notas: [6, 5] },
+//     { nome: 'Juliana', notas: [10, 9] }
+//   ];
+
+//   for (const { nome, notas } of alunos) {
+//     const totalNotas = notas.reduce((acc, val) => acc + val, 0)
+//     const media = (totalNotas) / 2;
+  
+//     console.log(`O aluno ${nome} tem uma média de ${media}.`);
+//   }
