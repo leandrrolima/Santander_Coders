@@ -30,7 +30,7 @@ const clientes = [
 
 const diaDaSemana = () => {
     const now = new Date();
-    const diaDaSemana = now.getDay();
+    const diaDaSemana = 1
     return diaDaSemana === 1;
 };
 
@@ -47,7 +47,7 @@ const bodyEmail = (cliente) => {
       
       
       Atenciosamente,
-      A Equipe CarStore
+      CarStore
       
     `;
 

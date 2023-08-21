@@ -5,6 +5,12 @@ function somaImposto(taxaImposto, custo) {
 let custo = 1599.90;
 let taxaImposto = 10;
 let novoCusto = somaImposto(taxaImposto, custo);
+let valorImposto = novoCusto - custo
 
+let resultado = {
+    valorInicial: `R$${custo.toFixed(2)}`,
+    totalJuros: `${taxaImposto}% = R$${valorImposto}`,
+    valorComImpostos: `R$${novoCusto.toFixed(2)}`
+};
 
-console.log(`O valor inicial era: ${custo.toFixed(2)} e o valor com os impostos é de: ${novoCusto.toFixed(2)}`)
+console.log(resultado)

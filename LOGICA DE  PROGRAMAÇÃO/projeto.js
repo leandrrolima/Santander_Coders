@@ -47,4 +47,15 @@ removeTask(1);
 console.log("Após remoção:");
 listTasks();
 
+// const listTasks = () => {
+//     const tasksByStatus = {};
+    
+//     possibleStatus.forEach(status => {
+//       tasksByStatus[status] = todos.filter(task => task.status === status);
+//     });
+  
+//     return tasksByStatus;
+//   };
+  
+
 
