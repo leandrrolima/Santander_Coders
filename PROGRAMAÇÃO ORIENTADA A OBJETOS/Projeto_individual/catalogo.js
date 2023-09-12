@@ -54,47 +54,6 @@ class Prata {
     this.price = price;
     this.sizes = sizes;
   }
-  // Getters
-  get id() {
-    return this._id;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get img() {
-    return this._img;
-  }
-
-  get price() {
-    return this._price;
-  }
-
-  get sizes() {
-    return this._sizes;
-  }
-
-  // Setters
-  set id(id) {
-    this._id = id;
-  }
-
-  set name(name) {
-    this._name = name;
-  }
-
-  set img(img) {
-    this._img = img;
-  }
-
-  set price(price) {
-    this._price = price;
-  }
-
-  set sizes(sizes) {
-    this._sizes = sizes;
-  }
 }
 
 
