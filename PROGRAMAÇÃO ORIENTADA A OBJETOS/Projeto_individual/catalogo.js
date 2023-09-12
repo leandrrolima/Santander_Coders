@@ -54,8 +54,8 @@ class Prata {
     this.price = price;
     this.sizes = sizes;
   }
-   // Getters
-   get id() {
+  // Getters
+  get id() {
     return this._id;
   }
 
@@ -105,9 +105,12 @@ class Catalogo {
     this.pratas = [];
   }
 
+  static totalPratas(catalogo) {
+    return catalogo.pratas.length;
+  }
 
   // Método para adicionar uma prata ao catálogo (Create)
-   adicionarPrata(prata) {
+  adicionarPrata(prata) {
     this.pratas.push(prata);
     this.atualizarTabela();
   }
@@ -127,7 +130,7 @@ class Catalogo {
       this.atualizarTabela();
     }
   }
-  
+
 
 
   // Método para remover uma prata do catálogo pelo ID (Delete)
@@ -166,6 +169,11 @@ const pratas = prataJson.map(prataData => new Prata(...Object.values(prataData))
 pratas.forEach(prata => catalogo.adicionarPrata(prata));
 
 
+// Usar o método estático totalPratas para calcular o número total de pratas no catálogo
+const totalDePratas = Catalogo.totalPratas(catalogo);
+console.log(`Total de pratas no catálogo: ${totalDePratas}`);
+
+
 // Função para preencher o formulário de atualização com os dados de uma prata
 function preencherFormulario(id) {
   const prata = catalogo.obterPrata(id);
@@ -194,7 +202,7 @@ document.getElementById('add-form').addEventListener('submit', event => {
   const id = catalogo.pratas.length + 1;
   const name = document.getElementById('name').value;
   const img = document.getElementById('img').value;
-  const price = [ parseFloat(document.getElementById('price').value)];
+  const price = [parseFloat(document.getElementById('price').value)];
   const sizes = document.getElementById('sizes').value;
   const prata = new Prata(id, name, img, price, sizes);
   catalogo.adicionarPrata(prata);
@@ -212,7 +220,7 @@ document.getElementById('update-form').addEventListener('submit', event => {
   catalogo.atualizarPrata(id, { name, img, price, sizes });
 });
 
-  document.getElementById('clear-button').addEventListener('click', () => {
+document.getElementById('clear-button').addEventListener('click', () => {
   document.getElementById('name').value = '';
   document.getElementById('img').value = '';
   document.getElementById('price').value = '';
