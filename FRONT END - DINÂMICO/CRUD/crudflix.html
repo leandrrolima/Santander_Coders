@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Filmes Famosos</title>
+    <link rel="stylesheet" type="text/css" href="crud.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/1x/4k.png" type="image/x-icon">
+
+</head>
+
+<body class="bg-dark">
+    
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger fw-bolder " href="#">CRUDFLIX</a>
+        </div>
+    </nav>
+
+    <div class="container center">
+        <div class="rope center">
+          <div class="legs center">
+            <div class="boot-l"></div>
+            <div class="boot-r"></div>
+          </div>
+          <div class="costume center">
+            <div class="spider">
+              <div class="s1 center"></div>
+              <div class="s2 center"></div>
+              <div class="s3"></div>
+              <div class="s4"></div>
+            </div>
+            <div class="belt center"></div>
+            <div class="hand-r"></div>
+            <div class="hand-l"></div>
+            <div class="neck center"></div>
+            <div class="mask center">
+              <div class="eye-l"></div>
+              <div class="eye-r"></div>
+            </div>
+            <div class="cover center"></div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div id="movies-list"></div>
+
+  
+
+        <button class="btn-53 mb-4" id="add-movie-button">
+            <div class="original">Adicionar Filme</div>
+            <div class="letters">
+              
+              <span>A</span>
+              <span>D</span>
+              <span>I</span>
+              <span>C</span>
+              <span>I</span>
+              <span>O</span>
+              <span>N</span>
+              <span>A</span>
+              <span>R</span>
+            </div>
+          </button>
+          
+
+    
+    <div id="movie-form" class="hidden position-fixed bg-light">
+        <h2>Adicionar/Editar Filme</h2>
+
+        <form id="movie-data" class="form">
+            <div class="flex">
+                <label for="title">
+                    <input type="text" id="title" class="input" required><span>Título</span>
+                </label>
+            </div>
+
+            <div class="flex">
+                <label for="genre">
+                    <select id="genre" class="input" required>
+                        <option value="Ação" class="fw-bolder">Ação</option>
+                        <option value="Comédia">Comédia</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Suspense">Suspense</option>
+                    </select>
+                    <span>Gênero</span>
+                </label>
+            </div>
+
+
+            <div class="flex">
+                <label for="year">
+                    <input type="number" id="year" class="input" required><span>Ano:</span>
+                </label>
+            </div>
+
+            <div class="flex">
+                <label for="image">
+                    <input type="url" id="image" class="input" required><span>URL da Imagem</span>
+                </label>
+            </div>
+
+            <div class="flex">
+                <label for="description">
+                    <textarea id="description" class="input" required></textarea><span>Descrição</span>
+                </label>
+            </div>
+
+            <button id="save-movie-button"
+                class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill text-center">Salvar</button>
+            <button id="cancel-button"
+                class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill text-center">Cancelar</button>
+        </form>
+    </div>
+
+    
+        
+
+    <div id="delete-confirmation" class="hidden">
+        <p>Tem certeza de que deseja excluir este filme?</p>
+        <button id="confirm-delete-button"
+            class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill text-center">Sim</button>
+        <button id="cancel-delete-button"
+            class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill text-center">Cancelar</button>
+    </div>
+
+    
+
+    <footer class="bg-dark  fixed-bottom ">
+        <p class="text-center text-danger fw-bold">© 2023 CRUDFLIX, Inc</p>
+    </footer>
+
+    
+    <script src="crud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

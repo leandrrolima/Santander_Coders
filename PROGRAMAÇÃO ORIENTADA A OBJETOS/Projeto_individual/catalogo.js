@@ -55,9 +55,7 @@ class Prata {
     this.sizes = sizes;
   }
 }
-
-
-
+5
 // Classe Catálogo
 class Catalogo {
   constructor() {
